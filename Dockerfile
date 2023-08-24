@@ -1,4 +1,4 @@
-FROM debian
+FROM docker pull kasmweb/core-ubuntu-bionic:1.14.0-rolling
 
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
