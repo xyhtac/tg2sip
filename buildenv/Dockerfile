@@ -50,7 +50,7 @@ RUN git clone -n https://github.com/gabime/spdlog.git \
 
 RUN ls -la
 
-COPY tg2sip /
+COPY . /
 
 RUN ls -la && cd /tg2sip \
     && mkdir build \
