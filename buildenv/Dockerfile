@@ -63,7 +63,6 @@ RUN ls -la && cd /tg2sip \
     && mkdir /opt/tg2sip \
     && cp -vr tg2sip /opt/tg2sip/ \
     && cp -vr gen_db /opt/tg2sip/ \
+    && cp -vr settings.ini /opt/tg2sip/ \
     && chmod +x /opt/tg2sip/tg2sip \
     && chmod +x /opt/tg2sip/gen_db
-
-COPY settings.ini /opt/tg2sip
