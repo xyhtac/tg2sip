@@ -1,4 +1,4 @@
-FROM kasmweb/core-ubuntu-bionic:1.14.0-rolling
+FROM ubuntu:bionic-20200403
 
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
