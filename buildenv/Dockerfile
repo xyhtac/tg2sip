@@ -48,7 +48,7 @@ RUN git clone -n https://github.com/gabime/spdlog.git \
     && cd / \
     && rm -rf spdlog
 
-COPY ../tg2sip /
+COPY tg2sip /
 
 RUN cd tg2sip \
     && mkdir build \
