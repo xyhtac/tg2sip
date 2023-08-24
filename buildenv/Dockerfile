@@ -52,7 +52,7 @@ RUN ls -la
 
 COPY tg2sip /
 
-RUN cd tg2sip \
+RUN cd /tg2sip \
     && mkdir build \
     && export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig \
     && cmake -DCMAKE_BUILD_TYPE=Release -DUSE_SYSTEM_CIMG=0 .. \
