@@ -47,3 +47,19 @@ RUN git clone -n https://github.com/gabime/spdlog.git \
     && cmake --build . --target install -j $(grep -c ^processor /proc/cpuinfo) \
     && cd / \
     && rm -rf spdlog
+
+COPY ../tg2sip /
+
+RUN cd tg2sip \
+    && mkdir build \
+    && export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig \
+    && cmake -DCMAKE_BUILD_TYPE=Release -DUSE_SYSTEM_CIMG=0 .. \
+    && cmake --build . \
+    && mkdir /opt/tg2sip \
+    && cp -vr tg2sip /opt/tg2sip/ \
+    && cp -vr gen_db /opt/tg2sip/ \
+    && cp -vr settings.ini /opt/tg2sip/ \
+    && chmod +x /opt/tg2sip/tg2sip \
+    && chmod +x /opt/tg2sip/gen_db
+
+COPY settings.ini /opt/tg2sip
