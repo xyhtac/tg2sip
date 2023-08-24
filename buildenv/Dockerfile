@@ -48,6 +48,8 @@ RUN git clone -n https://github.com/gabime/spdlog.git \
     && cd / \
     && rm -rf spdlog
 
+RUN ls -la
+
 COPY tg2sip /
 
 RUN cd tg2sip \
