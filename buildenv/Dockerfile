@@ -5,7 +5,7 @@ RUN apt-get update \
 		build-essential git \
 		wget ca-certificates \
 		pkg-config libopus-dev libssl-dev \
-		zlib1g-dev gperf ccache \
+		zlib1g-dev gperf ccache iputils-ping \
 	&& rm -rf /var/lib/apt/lists/*
 
 RUN wget https://cmake.org/files/v3.18/cmake-3.18.0-Linux-x86_64.sh \

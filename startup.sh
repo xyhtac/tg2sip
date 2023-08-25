@@ -9,5 +9,5 @@ if [ -f "$FILE" ]; then
     /opt/tg2sip/tg2sip
 else 
     echo "$FILE does not exist. Running user ping."
-    sh
+    ping 8.8.8.8
 fi
