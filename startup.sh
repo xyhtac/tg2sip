@@ -8,6 +8,6 @@ if [ -f "$FILE" ]; then
     echo "$FILE exists. Starting TG Client."
     /opt/tg2sip/tg2sip
 else 
-    echo "$FILE does not exist. Running GEN_DB."
-    /opt/tg2sip/gen_db
+    echo "$FILE does not exist. Running user prompt."
+    /bin/bash
 fi
