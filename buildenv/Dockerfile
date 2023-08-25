@@ -64,7 +64,8 @@ RUN ls -la && cd /tg2sip \
     && cp -vr /tg2sip/tg2sip /opt/tg2sip/ \
     && cp -vr /tg2sip/gen_db /opt/tg2sip/ \
     && cp -vr /settings.ini /opt/tg2sip/ \
+    && cp -vr /startup.sh /opt/tg2sip/ \
     && chmod +x /opt/tg2sip/tg2sip \
     && chmod +x /opt/tg2sip/gen_db
 
-# CMD ["/opt/tg2sip/tg2sip"]
+CMD ["bash", "/opt/tg2sip/startup.sh"]
