@@ -52,7 +52,7 @@ RUN ls -la
 
 COPY . /
 
-# ENV PATH="$PATH:/opt/tg2sip"
+ENV PATH="$PATH:/opt/tg2sip"
 RUN echo $PATH
 
 RUN ls -la && cd /tg2sip \
@@ -67,4 +67,4 @@ RUN ls -la && cd /tg2sip \
     && chmod +x /opt/tg2sip/tg2sip \
     && chmod +x /opt/tg2sip/gen_db
 
-CMD ["/opt/tg2sip/tg2sip"]
+# CMD ["/opt/tg2sip/tg2sip"]
