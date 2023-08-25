@@ -69,4 +69,4 @@ RUN ls -la && cd /tg2sip \
     && chmod +x /opt/tg2sip/startup.sh \
     && chmod +x /opt/tg2sip/gen_db
 
-CMD ["bash", "/opt/tg2sip/startup.sh"]
+# CMD ["bash", "/opt/tg2sip/startup.sh"]
