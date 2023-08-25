@@ -67,4 +67,3 @@ RUN ls -la && cd /tg2sip \
     && chmod +x /opt/tg2sip/tg2sip \
     && chmod +x /opt/tg2sip/gen_db
 
-CMD ["/opt/tg2sip"]
