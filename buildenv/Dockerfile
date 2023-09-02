@@ -1,5 +1,7 @@
 FROM ubuntu:bionic-20200403
 
+EXPOSE 5062/udp
+
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
 		build-essential git \
